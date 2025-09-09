@@ -55,7 +55,7 @@
       "androidCollapsedTitle": "Fastgrab Multivendor"
     },
     "android": {
-      "versionCode": 88,
+      "versionCode": 10,
       "package": "com.enatega.multivendor",
       "userInterfaceStyle": "automatic",
       "googleServicesFile": "./google-services.json",
