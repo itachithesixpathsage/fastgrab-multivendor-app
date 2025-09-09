@@ -6,11 +6,6 @@
     "experiments": {
       "buildCacheProvider": "eas"
     },
-    "updates": {
-      "enabled": false,
-      "checkAutomatically": "ON_LOAD",
-      "fallbackToCacheTimeout": 0
-    }
     "androidStatusBar": {
       "backgroundColor": "#000000"
     },
@@ -136,7 +131,9 @@
       "policy": "sdkVersion"
     },
     "updates": {
-      "enabled": false
+      "enabled": false,
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 0
     },
     "owner": "it4chi00"
   }
