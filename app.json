@@ -6,6 +6,11 @@
     "experiments": {
       "buildCacheProvider": "eas"
     },
+    "updates": {
+      "enabled": false,
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 0
+    }
     "androidStatusBar": {
       "backgroundColor": "#000000"
     },
