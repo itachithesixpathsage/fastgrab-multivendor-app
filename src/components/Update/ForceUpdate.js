@@ -5,8 +5,7 @@ import {
   Modal,
   Button,
   Linking,
-  Platform,
-  StyleSheet
+  Platform
 } from 'react-native'
 import * as Application from 'expo-application'
 import { gql, useQuery } from '@apollo/client'
@@ -49,16 +48,19 @@ const ForceUpdate = () => {
       const appVersion = await Application.nativeApplicationVersion
       setCurrentVersion(appVersion)
     }
-
     fetchCurrentVersion()
   }, [])
 
   useEffect(() => {
     const checkUpdate = () => {
+      // 🚨 Skip forced update in preview/dev builds
+      if (__DEV__) {
+        setIsUpdateModalVisible(false)
+        return
+      }
+
       if (data?.getVersions && currentVersion) {
         const { customerAppVersion } = data.getVersions
-
-        // New Version
         const new_version =
           Platform.OS === 'ios'
             ? customerAppVersion.ios
@@ -87,6 +89,9 @@ const ForceUpdate = () => {
   }
 
   if (loading) return <Text>Loading...</Text>
+
+  // Don’t render anything at all in dev/preview
+  if (__DEV__) return null
 
   return (
     <Modal

@@ -15,5 +15,4 @@ Key Features:
     Personalized Experience: Save your favorite restaurants and previous orders for quick re-ordering. Get notified of exclusive promotions and special deals from your favorite spots.
 
     Multi-Language Support: Navigate the app in your preferred language and switch themes to suit your style.
-[text](https://expo.dev/accounts/it4chi00/projects/fastgrab-multi/builds/95e21002-37d8-4f06-8b3c-9d0719d646cc)
-[text](https://expo.dev/accounts/it4chi00/projects/fastgrab-multivendor-restaurant/builds/4a91e7dc-2666-4e9d-9d42-c802e4774fec)
+https://expo.dev/accounts/it4chi00/projects/fastgrab-multi/builds/91929b22-4e53-4b58-98e1-988579027118up

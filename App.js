@@ -147,26 +147,26 @@ export default function App() {
   // }, [SENTRY_DSN])
 
   // For App Update
-  useEffect(() => {
+//  useEffect(() => {
     // eslint-disable-next-line no-undef
-    if (__DEV__) return
-    ;(async () => {
-      const { isAvailable } = await Updates.checkForUpdateAsync()
-      if (isAvailable) {
-        try {
-          setIsUpdating(true)
-          const { isNew } = await Updates.fetchUpdateAsync()
-          if (isNew) {
-            await Updates.reloadAsync()
-          }
-        } catch (error) {
-          console.log('error while updating app', JSON.stringify(error))
-        } finally {
-          setIsUpdating(false)
-        }
-      }
-    })()
-  }, [])
+//    if (__DEV__) return
+//    ;(async () => {
+//      const { isAvailable } = await Updates.checkForUpdateAsync()
+//     if (isAvailable) {
+//        try {
+//          setIsUpdating(true)
+ //         const { isNew } = await Updates.fetchUpdateAsync()
+ //         if (isNew) {
+ //           await Updates.reloadAsync()
+ //         }
+  //      } catch (error) {
+ //         console.log('error while updating app', JSON.stringify(error))
+ //       } finally {
+ //         setIsUpdating(false)
+  //      }
+  //    }
+  //  })()
+ // }, [])
 
   // For Push Notification
   useEffect(() => {
